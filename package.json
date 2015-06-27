@@ -1,0 +1,22 @@
+{
+  "name": "sandbox",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "gulp": " ./node_modules/.bin/gulp"
+  },
+  "dependencies": {
+    "babel": "*",
+    "react": "*"
+  },
+  "devDependencies": {
+    "babel-loader": "*",
+    "bundle-loader": "*",
+    "del": "*",
+    "gulp": "*",
+    "gulp-webpack-build": "*",
+    "webpack": "*",
+    "webpack-dev-server": "*"
+  }
+
+}
