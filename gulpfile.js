@@ -7,7 +7,7 @@ var webpackConfigPath = './webpack.config.js';
 gulp.task('default', ['clean', 'webpack:dev']);
 
 gulp.task('clean', function (cb) {
-    del(['build'], cb);
+    del(['public/build'], cb);
 });
 
 gulp.task('webpack:dev', ['clean'], function() {
