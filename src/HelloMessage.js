@@ -1,13 +1,14 @@
 import React from 'react';
 
-// if you forget the export, you might get Uncaught TypeError: type.toUpperCase is not a function
-// if you forget the default, you might get Uncaught TypeError: Cannot read property 'toUpperCase' of undefined
+// if you forget export, you might get Uncaught TypeError: type.toUpperCase is not a function
+// if you forget default, you might get Uncaught TypeError: Cannot read property 'toUpperCase' of undefined
 export default class HelloMessage extends React.Component {
+    updateModel = ::this.updateModel;
+    reset = ::this.reset;
+
     constructor(props) {
         super(props);
         this.state = {greeting: this.props.greeting};
-        this.updateModel = this.updateModel.bind(this);
-        this.reset = this.reset.bind(this);
     }
     reset() {
         this.setState({greeting: ""});

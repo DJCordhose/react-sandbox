@@ -14,7 +14,7 @@ module.exports = {
             {
                 test: /\.js$/, exclude: /node_modules/, loader: 'babel',
                 query: {
-                    optional: ["es7.functionBind", "es7.classProperties"]
+                    optional: ["es7.functionBind", "es7.classProperties", "es7.objectRestSpread"]
                 }
             },
             { test: /\.json$/, loader: 'json-loader'}
