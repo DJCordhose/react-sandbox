@@ -20478,7 +20478,7 @@
 	        key: 'reset',
 	        value: function reset() {
 	            this.setState({ greeting: '' });
-	            this.refs['in'].getDOMNode().focus();
+	            _react2['default'].findDOMNode(this.refs['in']).focus();
 	        }
 	    }, {
 	        key: 'updateModel',
@@ -20511,7 +20511,7 @@
 	exports['default'] = HelloMessage;
 	module.exports = exports['default'];
 
-	// es7.functionBind, "es7.classProperties
+	// es7.functionBind, es7.classProperties
 	// es7.objectRestSpread
 
 /***/ },

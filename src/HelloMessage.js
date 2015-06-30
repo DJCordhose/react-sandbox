@@ -3,7 +3,7 @@ import React from 'react';
 import MessageDisplay from './MessageDisplay';
 
 export default class HelloMessage extends React.Component {
-    // es7.functionBind, "es7.classProperties
+    // es7.functionBind, es7.classProperties
     updateModel = ::this.updateModel;
     reset = ::this.reset;
 
@@ -13,7 +13,7 @@ export default class HelloMessage extends React.Component {
     }
     reset() {
         this.setState({greeting: ""});
-        this.refs.in.getDOMNode().focus();
+        React.findDOMNode(this.refs.in).focus();
     }
     updateModel(event) {
         this.setState({greeting: event.target.value});
