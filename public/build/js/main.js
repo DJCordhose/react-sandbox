@@ -20463,13 +20463,14 @@
 	var _MessageDisplay2 = _interopRequireDefault(_MessageDisplay);
 	
 	var HelloMessage = (function (_React$Component) {
-	    function HelloMessage(props) {
+	    function HelloMessage() {
 	        _classCallCheck(this, HelloMessage);
 	
-	        _get(Object.getPrototypeOf(HelloMessage.prototype), 'constructor', this).call(this, props);
+	        _get(Object.getPrototypeOf(HelloMessage.prototype), 'constructor', this).apply(this, arguments);
+	
 	        this.updateModel = this.updateModel.bind(this);
 	        this.reset = this.reset.bind(this);
-	        this.state = { greeting: this.props.greeting };
+	        this.state = { greeting: this.props.greeting + '!' };
 	    }
 	
 	    _inherits(HelloMessage, _React$Component);

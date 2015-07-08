@@ -6,11 +6,8 @@ export default class HelloMessage extends React.Component {
     // es7.functionBind, es7.classProperties
     updateModel = ::this.updateModel;
     reset = ::this.reset;
+    state = {greeting: this.props.greeting};
 
-    constructor(props) {
-        super(props);
-        this.state = {greeting: this.props.greeting};
-    }
     reset() {
         this.setState({greeting: ""});
         React.findDOMNode(this.refs.in).focus();
